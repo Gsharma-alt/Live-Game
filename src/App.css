@@ -59,3 +59,14 @@ body {
   text-align: center;
   padding-right: 10px;
 }
+
+.playOnline {
+  background-color: aquamarine;
+  color: black;
+  cursor: pointer;
+  font-size: 50px;
+  border-radius: 5px;
+  font-weight: 800px;
+  margin-top: 30vh;
+  padding: 5px;
+}

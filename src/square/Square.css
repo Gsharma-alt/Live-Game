@@ -19,3 +19,11 @@
     row-gap: 10px;
     column-gap: 10px;
 }
+
+.circle-won {
+    background-color: #13cf84;
+}
+
+.cross-won {
+    background-color: #33b6a5;
+}
