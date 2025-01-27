@@ -1,32 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-body {
-  background-color: #1f1f2f;
-  color: aliceblue;
-  font-family: "Nunito", serif;
-}
-
 .main-div {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
   flex-direction: column;
 }
 
-.heading-bg {
-  background-color: #4B495F;
-  padding: 10px 10px;
-  border-radius: 10px 5px;
+.playOnline {
+  font-weight: 700;
+  border: none;
+  background-color: #e4ca56;
+  font-size: 60px;
+  cursor: pointer;
+  margin-top: 40vh;
+  padding: 6px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.water-background {
+  background-color: #4b495f;
+}
+
+.game-heading {
+  padding: 5px 20px;
+  border-radius: 5px;
   text-align: center;
   font-size: 40px;
+}
+
+.square-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
 }
 
 .move-detection {
   display: flex;
   justify-content: space-between;
-  width: 400px;
   align-items: center;
+  width: 400px;
 }
 
 .finished-state {
@@ -36,37 +50,35 @@ body {
 
 .left,
 .right {
-  height: 40px;
-  width: 100px;
-  background-color: #77749a;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  font-family: sans-serif;
+  height: 30px;
+  width: 120px;
+  background-color: red;
+  border-bottom-left-radius: 50px;
+  background-color: #4b495f;
+  border-top-right-radius: 50px;
+  padding-top: 7px;
   font-size: 18px;
-  font-weight: 600;
-}
-
-.left {
-  border-top-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  padding-left: 10px;
+  padding-bottom: 5px;
   text-align: center;
 }
 
-.right {
-  border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-  text-align: center;
-  padding-right: 10px;
+.waiting {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 44px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.playOnline {
-  background-color: aquamarine;
-  color: black;
-  cursor: pointer;
-  font-size: 50px;
-  border-radius: 5px;
-  font-weight: 800px;
-  margin-top: 30vh;
-  padding: 5px;
+.current-move-cross {
+  background-color: #3fa7f0 !important;
+}
+
+.current-move-circle {
+  background-color: #dd7f9f !important;
 }
